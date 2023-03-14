@@ -6,22 +6,25 @@
   "private": true,
   "main": "start.js",
   "build": {
-    "appId": "01",
+    "appId": "com.logiccipher.pos",
+    "productName": "LOGIC CIPHER POS",
     "directories": {
-      "buildResources": "assets"
-    }
+      "output": "pos"
+    },
+    "icon": "./assets/images/icon.png",
+    "target": "NSIS"
   },
   "dependencies": {
     "async": "^2.6.0",
     "body-parser": "^1.18.2",
     "btoa": "^1.2.1",
-    "electron": ">=13.6.6",
     "electron-context-menu": "^0.15.1",
     "electron-store": "^5.1.0",
     "electron-winstaller": "^4.0.0",
     "express": "^4.16.2",
     "express-fileupload": "^1.1.6",
     "html2canvas": "^1.0.0-rc.5",
+    "html2pdf.js": "0.9.0",
     "http": "0.0.0",
     "https": "^1.0.0",
     "is-port-reachable": "^2.0.1",
@@ -37,6 +40,7 @@
     "print-js": "^1.0.63",
     "socket.io": "^2.4.0",
     "sweetalert2": "^9.5.4",
+    "uuid": "^9.0.0",
     "xmlhttprequest": "^1.8.0"
   },
   "scripts": {
@@ -58,6 +62,7 @@
   },
   "devDependencies": {
     "cross-env": "^6.0.3",
+    "electron": "^11.3.0",
     "electron-builder": "^21.2.0",
     "electron-is-dev": "^1.1.0",
     "nodemon": "^1.19.3"
