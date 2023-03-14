@@ -2003,7 +2003,7 @@ function userFilter(users) {
       return usr._id == user;
     });
 
-    $("#users").append(`<option value="${user}">${u[0].fullname}</option>`);
+    $("#users").append(`<option value="${user}">${u[0]?.fullname}</option>`);
   });
 }
 

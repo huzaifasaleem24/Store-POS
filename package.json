@@ -7,7 +7,7 @@
   "main": "start.js",
   "build": {
     "appId": "com.logiccipher.pos",
-    "productName": "LOGIC CIPHER POS",
+    "productName": "Store POS",
     "directories": {
       "output": "pos"
     },
